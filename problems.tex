@@ -97,9 +97,26 @@
   Students should carefully read the document \emph{Using git for assessments}~\cite{usinggit} that is available on the Moodle page and applies to this assessment.
   Students are also reminded to follow the GMIT Quality Assurance Framework including the Code of Student Conduct and the policy on plagiarism~\cite{gmitqaf}.
 
+  \section*{Instructions}
+  In this project you will create a web service that uses a machine learning model to make predictions.
+  The web service will provide a standard HTTP interface allowing users to send inputs in a standard format and receive predicted outputs based on the model.
+  In the project you will use the famous Iris flower data to train the model.
+  The goal will be to allow users to send four numeric inputs and receive a predicted category of iris as output.
 
-\section*{Brief}
-  In this project you will investigate the famous Iris flower data set using machine learning techniques.
+  Your submission will be in the form of a git repository containing, at a minimum, the following items:
+  \begin{enumerate}
+    \item A jupyter notebook that trains a model using the iris dataset, as above.
+    \item A python script that runs a web service based on the model, as above.
+    \item Relevant documentation such as a README containing instructions to train the model and run the web service.
+  \end{enumerate}
+  To enhance your submission, you might consider adding some of the following items.
+  \begin{enumerate}
+    \item A docker file to create an image for your web service.
+    \item More than one model based on the data set, for comparison.
+    \item An analysis of the accuracy of your model.
+  \end{enumerate}
+  Rest assured, all the above concepts will be explored in lecture videos and other materials in the coming semester.
+
 
 \newpage
 
@@ -117,7 +134,7 @@
       \midrule
       25\% & \textbf{Development} & Environment can be set up as described; code works without tweaking and as described; code is efficient, clean, and clear; evidence of consideration of standards and conventions appropriate to code of this kind. \\
       \midrule
-      25\% & \textbf{Consistency} & Evidence of planning and project management; pragmatic attitude to work as evidenced by well-considered commit history; commits are of a reasonable size; evidence of consideration . \\
+      25\% & \textbf{Consistency} & Evidence of planning and project management; pragmatic attitude to work as evidenced by well-considered commit history; commits are of a reasonable size; evidence of consideration. \\
       \midrule
       25\% & \textbf{Documentation} & Clear documentation of: how to create an environment in which any code will run, how to prepare the code for running, how to run the code including setting any options or flags, what to expect upon running the code. Concise descriptions of any code in comments and README. \\
       \bottomrule
