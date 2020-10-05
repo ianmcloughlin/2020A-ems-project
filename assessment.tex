@@ -98,23 +98,18 @@
   As always, you must also follow the code of student conduct and the policy on plagiarism~\cite{gmitqaf}.
 
   \section*{Instructions}
-    In this project you will create a web service that uses a machine learning model to make predictions.
-    The web service will provide a standard HTTP interface, allowing users to send inputs in a standard format and receive predicted outputs based on the model.
-    In the project you will use the famous Iris flower data to train the model.
-    The goal will be to allow users to send four numeric inputs and receive a predicted category of iris as output.
+    In this project you must create a web service that uses machine learning to make predictions based on the data set \texttt{powerproduction} available on Moodle.
+    The goal is to produce a model that accurately predicts \texttt{power} values from \texttt{speed} values, as in the data set.
+    You must then develop a web service that will respond with predicted power values based on speed values sent as HTTP requests.
+    Your submission must be in the form of a git repository containing, at a minimum, the following items:
+    \begin{enumerate}
+      \item Jupyter notebook that trains a model using the data set. In the notebook you should explain your model and give an analysis of its accuracy.
+      \item Python script that runs a web service based on the model, as above.
+      \item Dockerfile to run the web service in a container.
+      \item Standard items in a git repository such as a README.
+    \end{enumerate}
 
-    Your submission will be in the form of a git repository containing, at a minimum, the following items:
-    \begin{enumerate}
-      \item A jupyter notebook that trains a model using the iris dataset, as above.
-      \item A python script that runs a web service based on the model, as above.
-      \item Relevant documentation such as a README containing instructions to train the model and run the web service.
-    \end{enumerate}
-    To enhance your submission, you might consider adding some of the following items.
-    \begin{enumerate}
-      \item A docker file to create an image for your web service.
-      \item More than one model based on the data set, for comparison.
-      \item An analysis of the accuracy of your model.
-    \end{enumerate}
+    To enhance your submission, you might consider developing and comparing more than one model.
     Rest assured, all the above concepts will be explored in lecture videos and other materials in the coming semester.
 
   \newpage
