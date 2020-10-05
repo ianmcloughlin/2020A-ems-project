@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 a, m, n, t = 100.0, 20.0, 1200.0, 1.8
 
 # Appropriate x values, evenly spaced.
-x = np.linspace(0.0, 25.0, 10000)
+x = np.linspace(0.0, 25.0, 1000)
 
 # Remove half the x values at random.
 x = x[np.sort(np.random.choice(len(x), size=len(x) // 2, replace=False))]
@@ -30,8 +30,11 @@ y[x >= 24.4] = 0.0
 y[np.sort(np.random.choice(len(y), size=len(y) // 100, replace=False))] = 0.0
 
 # Plot the data.
+fig = plt.figure()
 plt.plot(x, y, 'k.')
-plt.show()
+plt.xlabel(r"speed m/s")
+plt.ylabel(r"power kW")
+fig.savefig('scatter.png', dpi=fig.dpi)
 
 # Convert to data frame.
 df = pd.DataFrame({"speed": x, "power": y})
