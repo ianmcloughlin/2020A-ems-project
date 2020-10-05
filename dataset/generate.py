@@ -35,3 +35,4 @@ plt.show()
 
 # Convert to data frame.
 df = pd.DataFrame({"speed": x, "power": y})
+df.to_csv("powerproduction.csv", index=False, float_format='%.3f')
